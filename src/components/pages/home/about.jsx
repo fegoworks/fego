@@ -1,0 +1,77 @@
+/** @format */
+
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
+const About = () => (
+  <About.Container>
+    <About.Left>
+      <About.Header>
+        Hey, I’m Fego - A Software Engineer from Lagos.
+      </About.Header>
+      <About.Bio>
+        I’ve developed features for millions of users on the Fordpass iOS team,
+        worked on mission planning tools for another planet at NASA, and I am
+        currently building the backend for Toga's Insurance app.
+      </About.Bio>
+      <About.Link>fegoworks@hotmail.com</About.Link>
+    </About.Left>
+    <About.Right
+      src="https://res.cloudinary.com/fego/image/upload/v1589903373/fego/undraw_web_developer_p3e5_jbcxhp.svg"
+      alt=""
+    />
+  </About.Container>
+);
+
+About.Container = styled.section`
+  display: flex;
+  flex-basis: 50% 50%;
+  justify-content: space-between;
+  padding: 3rem 0;
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
+`;
+
+About.Left = styled.div``;
+
+About.Header = styled.h1`
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+`;
+
+About.Bio = styled.p`
+  font-size: 1.3rem;
+`;
+
+About.Link = styled.a`
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  border-bottom: 0.01rem solid black;
+
+  :hover {
+    color: white;
+    background: black;
+  }
+`;
+
+About.Right = styled.img`
+  width: 50%;
+  height: auto;
+
+  @media (max-width: 1024px) {
+    width: 70%;
+    margin-bottom: 4rem !important;
+    margin: 0 auto;
+  }
+`;
+export default About;
