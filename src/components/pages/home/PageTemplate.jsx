@@ -3,10 +3,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import About from '../../pages/home/About';
+import Features from '../../pages/home/Features';
 
 const PageTemplate = () => (
   <PageTemplate.Container>
     <About />
+    <Features />
   </PageTemplate.Container>
 );
 
@@ -22,7 +24,7 @@ PageTemplate.Container = styled.div`
   }
 
   @media (max-width: 999px) {
-    margin: 0 4rem;
+    margin: 0 7rem;
   }
 
   @media (max-width: 768px) {

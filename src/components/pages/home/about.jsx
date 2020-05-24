@@ -11,9 +11,11 @@ const About = () => (
         Hey, I’m Fego - A Software Engineer from Lagos.
       </About.Header>
       <About.Bio>
-        I’ve developed features for millions of users on the Fordpass iOS team,
-        worked on mission planning tools for another planet at NASA, and I am
-        currently building the backend for Toga's Insurance app.
+        I am a JavaScript nomad, originally from the earth kingdom of{' '}
+        <span style={{ color: '#bc658d' }}>Bah Sing Seh</span>. One time I stood
+        between the sun and the moon, my shadow fell on the earth and caused a
+        solar eclipse. I am currently building the backend for Toga's Insurance
+        app.
       </About.Bio>
       <About.Link>fegoworks@hotmail.com</About.Link>
     </About.Left>

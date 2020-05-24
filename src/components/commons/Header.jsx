@@ -35,6 +35,7 @@ Header.Container = styled.div`
   background-color: white;
   border-bottom: 0.05rem solid black;
   padding-bottom: 0.75rem !important;
+  z-index: 2;
 
   @media (max-width: 1240px) {
     padding: 0 4rem;
@@ -45,7 +46,7 @@ Header.Container = styled.div`
   }
 
   @media (max-width: 999px) {
-    padding: 0 4rem;
+    padding: 0 7rem;
   }
 
   @media (max-width: 768px) {
