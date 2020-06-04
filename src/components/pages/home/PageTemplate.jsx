@@ -3,18 +3,30 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import Header from '../../commons/Header';
-import About from '../../pages/home/About';
+import About from './About';
 import Features from './Feature/Features';
 
-const PageTemplate = () => (
-  <Fragment>
-    <Header />
-    <PageTemplate.Container>
-      <About />
-      <Features />
-    </PageTemplate.Container>
-  </Fragment>
-);
+class PageTemplate extends React.Component {
+  state = {
+    isOpen: false,
+  };
+
+  onToggle = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
+
+  render() {
+    return (
+      <Fragment>
+        <Header open={this.state.isOpen} handleClick={this.onToggle} />
+        <PageTemplate.Container>
+          <About />
+          <Features />
+        </PageTemplate.Container>
+      </Fragment>
+    );
+  }
+}
 
 PageTemplate.Container = styled.div`
   margin: 0 7rem;

@@ -17,6 +17,7 @@ Button.Container = styled.button`
     text-align: center;
     cursor: pointer;
     font-size: 0.75rem;
+    padding: 0.4rem 0;
     font-weight: bold;
     background: ${color};
     border: 0.1rem solid orange;
