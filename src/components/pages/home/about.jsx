@@ -48,6 +48,10 @@ About.Header = styled.h1`
 
 About.Bio = styled.p`
   font-size: 1.3rem;
+  line-height: 1.75rem;
+  s span {
+    text-decoration-style: wavy;
+  }
 `;
 
 About.Link = styled.a`

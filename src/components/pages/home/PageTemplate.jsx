@@ -1,15 +1,19 @@
 /** @format */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import Header from '../../commons/Header';
 import About from '../../pages/home/About';
-import Features from '../../pages/home/Features';
+import Features from './Feature/Features';
 
 const PageTemplate = () => (
-  <PageTemplate.Container>
-    <About />
-    <Features />
-  </PageTemplate.Container>
+  <Fragment>
+    <Header />
+    <PageTemplate.Container>
+      <About />
+      <Features />
+    </PageTemplate.Container>
+  </Fragment>
 );
 
 PageTemplate.Container = styled.div`
