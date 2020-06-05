@@ -15,7 +15,7 @@ const Header = ({ open, handleClick }) => (
     </Header.Burger>
     <Header.List open={open}>
       <li>
-        <a target="_blank" href="https://www.linkedin.com/in/oghenefego-edafe/">
+        <a target="_blank" href="https://github.com/fegoworks/">
           github
         </a>
       </li>
@@ -27,6 +27,11 @@ const Header = ({ open, handleClick }) => (
       <li>
         <a target="_blank" href="https://twitter.com/realfego">
           twitter
+        </a>
+      </li>
+      <li className="email">
+        <a target="_blank" href={'mailto:fegoworks@hotmail.com'}>
+          email
         </a>
       </li>
       <Button title="hire me" color="white" margin="0.2rem 0.5rem" />
@@ -90,6 +95,10 @@ Header.List = styled.ul`
     font-weight: 600;
   }
 
+  .email {
+    display: none;
+  }
+
   @media (max-width: 999px) {
     position: fixed;
     top: 0;
@@ -107,6 +116,10 @@ Header.List = styled.ul`
     transition: all 1s ease-out;
     opacity: 0.9;
 
+    .email {
+      display: inline-block;
+    }
+
     li a {
       font-size: 2.35rem;
       margin: 1.2rem 0;
@@ -123,6 +136,10 @@ Header.List = styled.ul`
     li:nth-child(3) {
       transition: all 0.5s ease 0.6s;
     }
+    li:nth-child(4) {
+      transition: all 0.5s ease 0.8s;
+    }
+
     li {
       opacity: ${(props) => (props.open ? 1 : 0)};
     }

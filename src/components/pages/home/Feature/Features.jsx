@@ -3,7 +3,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import FeatureList from './FeatureList';
-import works from '../../../../services/works';
+import works from '../../../../data/works';
 
 const Features = () => {
   return (

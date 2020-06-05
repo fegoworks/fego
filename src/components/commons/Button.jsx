@@ -26,6 +26,8 @@ Button.Container = styled.button`
     -moz-box-shadow: 6px 6px 0 #666;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
+  
+    @media(max-width: 999px){display:none}
   `}
 `;
 
