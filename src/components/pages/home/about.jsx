@@ -2,7 +2,6 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const About = () => (
   <About.Container>
@@ -17,7 +16,9 @@ const About = () => (
         solar eclipse. I am currently building the backend for Toga's Insurance
         app.
       </About.Bio>
-      <About.Link>fegoworks@hotmail.com</About.Link>
+      <About.Link target="_blank" href={'mailto:fegoworks@hotmail.com'}>
+        fegoworks@hotmail.com
+      </About.Link>
     </About.Left>
     <About.Right
       src="https://res.cloudinary.com/fego/image/upload/v1589903373/fego/undraw_web_developer_p3e5_jbcxhp.svg"
@@ -44,6 +45,11 @@ About.Header = styled.h1`
   font-weight: 700;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 411px) {
+    font-size: 1.75rem;
+    font-weight: 650;
+  }
 `;
 
 About.Bio = styled.p`
@@ -51,6 +57,10 @@ About.Bio = styled.p`
   line-height: 1.75rem;
   s span {
     text-decoration-style: wavy;
+  }
+
+  @media (max-width: 411px) {
+    font-size: 1.15rem;
   }
 `;
 
