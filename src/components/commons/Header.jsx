@@ -174,6 +174,12 @@ Header.Burger = styled.div`
     top: 50%;
     transform: translate(-4%, -60%);
   }
+
+  @media (max-width: 320px) {
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -60%);
+  }
 `;
 
 export default Header;

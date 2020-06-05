@@ -65,6 +65,18 @@ Feature.Container = styled.div`
       transform: translateY(-3%);
     }
   }
+
+  @media (max-width: 576px) {
+    padding: 0 3.15rem;
+  }
+
+  @media (max-width: 411px) {
+    padding: 0 2.35rem;
+  }
+
+  @media (max-width: 320px) {
+    padding: 0 1.5rem;
+  }
 `;
 
 Feature.Overlay = styled.div`
@@ -82,6 +94,11 @@ Feature.Overlay = styled.div`
   :hover {
     opacity: 1;
   }
+  @media (max-width: 411px) {
+    div {
+      margin: 0.75rem !important;
+    }
+  }
 `;
 
 Feature.Image = styled.img`
@@ -90,12 +107,25 @@ Feature.Image = styled.img`
   width: 100%;
   box-shadow: 5px 5px #9dab86;
   object-fit: contain;
+
+  @media (max-width: 411px) {
+    margin: 5rem 0;
+  }
+
+  @media (max-width: 320px) {
+    margin: 4rem 0;
+  }
 `;
 
 Feature.Text = styled.h2`
   color: whitesmoke;
   font-size: 1.75rem;
   font-weight: 800;
+
+  @media (max-width: 411px) {
+    font-weight: 500;
+    font-size: 1.35rem;
+  }
 `;
 
 Feature.propTypes = {
