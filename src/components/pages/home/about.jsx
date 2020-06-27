@@ -16,7 +16,11 @@ const About = () => (
         solar eclipse. I am currently building the backend for Toga's Insurance
         app.
       </About.Bio>
-      <About.Link target="_blank" href={'mailto:fegoworks@hotmail.com'}>
+      <About.Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href={'mailto:fegoworks@hotmail.com'}
+      >
         fegoworks@hotmail.com
       </About.Link>
     </About.Left>
