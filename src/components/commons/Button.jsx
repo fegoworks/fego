@@ -4,18 +4,26 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Button = ({ title, color, margin }) => (
-  <Button.Container color={color} margin={margin}>
+const Button = ({ email, title, color, margin }) => (
+  <Button.Container
+    target="_blank"
+    rel="noopener noreferrer"
+    href={email}
+    color={color}
+    margin={margin}
+  >
     {title}
   </Button.Container>
 );
 
-Button.Container = styled.button`
+Button.Container = styled.a`
   ${({ color, margin }) => `
     width: 6rem;
     margin: ${margin};
     text-align: center;
+    text-decoration: none;
     cursor: pointer;
+    color: black;
     font-size: 0.75rem;
     padding: 0.4rem 0;
     font-weight: bold;
