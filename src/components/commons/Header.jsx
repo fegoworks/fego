@@ -15,26 +15,47 @@ const Header = ({ open, handleClick }) => (
     </Header.Burger>
     <Header.List open={open}>
       <li>
-        <a target="_blank" href="https://github.com/fegoworks/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/fegoworks/"
+        >
           github
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://www.linkedin.com/in/oghenefego-edafe/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/oghenefego-edafe/"
+        >
           linkedin
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://twitter.com/realfego">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/realfego"
+        >
           twitter
         </a>
       </li>
       <li className="email">
-        <a target="_blank" href={'mailto:fegoworks@hotmail.com'}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={'mailto:fegoworks@hotmail.com'}
+        >
           email
         </a>
       </li>
-      <Button title="hire me" color="white" margin="0.2rem 0.5rem" />
+      <Button
+        email={'mailto:fegoworks@hotmail.com'}
+        title="hire me"
+        color="white"
+        margin="0.2rem 0.5rem"
+      />
     </Header.List>
   </Header.Container>
 );
