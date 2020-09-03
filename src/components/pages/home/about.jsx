@@ -7,14 +7,19 @@ const About = () => (
   <About.Container>
     <About.Left>
       <About.Header>
-        Hey, I am Edafe Oghenefego Evi - A Software Engineer from Lagos.
+        Hey, I am Fego - A Software Engineer from Lagos.
       </About.Header>
       <About.Bio>
         I am a JavaScript nomad, originally from the earth kingdom of{' '}
         <span style={{ color: '#bc658d' }}>Bah Sing Seh</span>. One time I stood
         between the sun and the moon, my shadow fell on the earth and caused a
-        solar eclipse. I am currently building cool stuff at AntStack
-        Technologies Limited. Limited
+        solar eclipse. I am currently consulting and building cool stuff at{' '}
+        <a
+          style={{ color: '#b11226', textDecoration: 'none' }}
+          href="https://www.antstack.io/"
+        >
+          antstack.io 😊
+        </a>
       </About.Bio>
       <About.Link
         target="_blank"
